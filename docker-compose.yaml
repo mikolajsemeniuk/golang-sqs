@@ -4,7 +4,6 @@ services:
   localstack:
     image: localstack/localstack:latest
     ports:
-      - 4566:4566  # Expose LocalStack services on port 4566
-      - 8080:8080  # Optional: Expose LocalStack web interface (default port)
+      - 4566:4566
     environment:
       - SERVICES=sqs
